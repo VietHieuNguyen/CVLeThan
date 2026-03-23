@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio cá nhân của Lê Tiến Thân - Sinh viên ngành Thương mại điện tử tại HCMUTE">
+  <title>Lê Tiến Thân | Trang Chủ</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="home.html" class="logo">Lê Tiến Thân</a>
+      <nav class="nav">
+        <a href="home.html" class="active">Trang chủ</a>
+        <a href="#projects">Dự án</a>
+        <a href="about.html">Giới thiệu</a>
+        <a href="contact.html">Liên hệ</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Mở menu điều hướng">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-home">
+    <div class="container">
+      <div class="hero-content">
+        <span class="label-text">Portfolio Cá Nhân</span>
+        <h1>Xin chào, tôi là <em class="serif-italic">Lê Tiến Thân</em></h1>
+        <p>Sinh viên ngành Thương mại điện tử tại HCMUTE. Tôi đam mê xây dựng các giải pháp số sáng tạo, tập trung vào trải nghiệm người dùng và chiến lược kinh doanh trực tuyến.</p>
+        <a href="#projects" class="btn-outline">Khám Phá Dự Án</a>
+      </div>
+      <div class="hero-image">
+        <!-- Thay ảnh: đặt file vào folder images/ và cập nhật src -->
+        <img src="images/profile.jpg" alt="Lê Tiến Thân" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=hero-image-placeholder>Thêm ảnh: images/profile.jpg</div>'">
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="projects-header">
+        <h2>Dự Án Nổi Bật</h2>
+        <a href="contact.html">LIÊN HỆ HỢP TÁC</a>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1: ECoV -->
+        <a href="project-ecov.html" class="project-card">
+          <div class="project-card-image">
+            <span class="badge">Thương mại điện tử</span>
+            <img src="images/project-1.jpg" alt="Nền tảng bán hàng ECoV" onerror="this.style.display='none'">
+          </div>
+          <h3>Nền tảng bán hàng ECoV</h3>
+          <p>Xây dựng hệ thống thương mại điện tử toàn diện từ giao diện người dùng đến quy trình thanh toán. Tập trung tối ưu trải nghiệm mua sắm trực quan, tăng tỷ lệ chuyển đổi và giữ chân khách hàng thông qua thiết kế UX dựa trên dữ liệu hành vi.</p>
+          <div class="project-tags">
+            <span class="tag"><span class="dot"></span> ADS</span>
+            <span class="tag"><span class="dot"></span> Customer</span>
+          </div>
+        </a>
+
+        <!-- Project 2: Quảng cáo Facebook -->
+        <a href="project-fbads.html" class="project-card">
+          <div class="project-card-image">
+            <span class="badge">Digital Marketing</span>
+            <img src="images/project-2.jpg" alt="Quảng cáo Facebook" onerror="this.style.display='none'">
+          </div>
+          <h3>Quảng cáo Facebook</h3>
+          <p>Triển khai chiến dịch quảng cáo Facebook Ads đa mục tiêu — từ xây dựng nhận diện thương hiệu đến tối ưu chi phí chuyển đổi. Phân tích insight khách hàng, A/B testing nội dung sáng tạo và đo lường ROI theo thời gian thực.</p>
+          <div class="project-tags">
+            <span class="tag"><span class="dot"></span> ADS</span>
+            <span class="tag"><span class="dot"></span> Customer</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA LIÊN HỆ -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Bạn muốn trao đổi thêm?</h2>
+      <a href="contact.html" class="btn-primary">Liên Hệ Với Tôi</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <span class="footer-logo">Lê Tiến Thân</span>
+      <div class="footer-links">
+        <a href="home.html">Trang chủ</a>
+        <a href="about.html">Giới thiệu</a>
+        <a href="contact.html">Liên hệ</a>
+      </div>
+      <span class="footer-copyright">© 2026 LÊ TIẾN THÂN. MỌI QUYỀN ĐƯỢC BẢO LƯU.</span>
+    </div>
+  </footer>
+
+</body>
+</html>

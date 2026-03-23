@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Liên hệ với Lê Tiến Thân - Sinh viên Thương mại điện tử tại HCMUTE">
+  <title>Lê Tiến Thân | Liên Hệ</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="home.html" class="logo">Lê Tiến Thân</a>
+      <nav class="nav">
+        <a href="home.html">Trang chủ</a>
+        <a href="home.html#projects">Dự án</a>
+        <a href="about.html">Giới thiệu</a>
+        <a href="contact.html" class="active">Liên hệ</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Mở menu điều hướng">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO CONTACT -->
+  <section class="hero-contact">
+    <div class="container">
+      <h1>Hãy bắt đầu cuộc<br><em class="serif-italic">trò chuyện.</em></h1>
+      <p>Dù là một dự án mới hay đơn giản chỉ là lời chào, tôi luôn sẵn sàng trao đổi về trải nghiệm số, thương mại điện tử và cơ hội thực tập phù hợp.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT INFO -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-info">
+        <div class="contact-block">
+          <span class="label-text">Liên Hệ</span>
+          <h3>Email</h3>
+          <p><a href="mailto:lethan0811@gmail.com">lethan0811@gmail.com</a></p>
+        </div>
+
+        <div class="contact-block">
+          <span class="label-text">Địa Điểm</span>
+          <h3>Thành phố</h3>
+          <p>TP. Hồ Chí Minh<br>Việt Nam</p>
+        </div>
+
+        <div class="contact-block">
+          <span class="label-text">Kết Nối</span>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/than.than.136521/about" target="_blank" rel="noreferrer" class="social-icon" title="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/thantienle/" target="_blank" rel="noreferrer" class="social-icon" title="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="mailto:lethan0811@gmail.com" class="social-icon" title="Gmail">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-content">
+        <form class="contact-form" id="contact-form" action="https://formsubmit.co/lethan0811@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Liên hệ mới từ portfolio của Lê Tiến Thân">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_url" value="contact.html">
+
+          <div class="contact-form-intro">
+            <span class="label-text">Biểu Mẫu</span>
+            <h2>Gửi tin nhắn trực tiếp</h2>
+            <p>Điền biểu mẫu bên dưới để tôi nhận nội dung ngay trong email. Nếu đây là lần đầu dùng FormSubmit cho địa chỉ này, bạn chỉ cần xác nhận email kích hoạt một lần.</p>
+          </div>
+
+          <div class="form-grid">
+            <label class="form-field">
+              <span>Họ và tên</span>
+              <input type="text" name="name" placeholder="Tên của bạn" autocomplete="name" required>
+            </label>
+
+            <label class="form-field">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="ban@example.com" autocomplete="email" required>
+            </label>
+
+            <label class="form-field">
+              <span>Chủ đề</span>
+              <input type="text" name="subject" placeholder="Bạn muốn trao đổi về điều gì?" required>
+            </label>
+
+            <label class="form-field">
+              <span>Số điện thoại</span>
+              <input type="tel" name="phone" placeholder="Không bắt buộc" autocomplete="tel">
+            </label>
+
+            <label class="form-field form-field-full">
+              <span>Nội dung</span>
+              <textarea name="message" rows="6" placeholder="Mô tả ngắn gọn nhu cầu hoặc lời nhắn của bạn" required></textarea>
+            </label>
+          </div>
+
+          <label class="hidden-field" aria-hidden="true">
+            <span>Để trống trường này</span>
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off">
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-primary">Gửi Tin Nhắn</button>
+            <p class="form-note">Tin nhắn sẽ được gửi tới <a href="mailto:lethan0811@gmail.com">lethan0811@gmail.com</a>.</p>
+          </div>
+
+          <p class="form-status" id="form-status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-cards">
+          <a href="#contact-form" class="contact-action-card">
+            <div class="contact-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3>Biểu mẫu</h3>
+            <p>Điền thông tin và gửi trực tiếp từ website</p>
+            <span class="contact-card-cta">Mở biểu mẫu →</span>
+          </a>
+
+          <a href="https://www.facebook.com/than.than.136521/about" target="_blank" rel="noreferrer" class="contact-action-card">
+            <div class="contact-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </div>
+            <h3>Facebook</h3>
+            <p>Nhắn tin nhanh qua Messenger</p>
+            <span class="contact-card-cta">Mở Facebook →</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/thantienle/" target="_blank" rel="noreferrer" class="contact-action-card">
+            <div class="contact-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <h3>LinkedIn</h3>
+            <p>Kết nối chuyên nghiệp</p>
+            <span class="contact-card-cta">Xem hồ sơ →</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVAILABILITY -->
+  <section class="availability-section">
+    <div class="container">
+      <div class="availability-image">
+        <img src="images/workspace.jpg" alt="Không gian làm việc" onerror="this.style.display='none'">
+      </div>
+      <div class="availability-content">
+        <span class="label-text">Sẵn Sàng Học Hỏi</span>
+        <h2>Tìm kiếm cơ hội<br>Internship 2026</h2>
+        <p>Tôi đang tìm kiếm cơ hội thực tập để được học hỏi, rèn luyện và đóng góp sức trẻ vào môi trường chuyên nghiệp. Rất mong được kết nối và trao đổi cùng quý anh/chị.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <span class="footer-logo">Lê Tiến Thân</span>
+      <div class="footer-links">
+        <a href="home.html">Trang chủ</a>
+        <a href="about.html">Giới thiệu</a>
+        <a href="contact.html">Liên hệ</a>
+      </div>
+      <span class="footer-copyright">© 2026 LÊ TIẾN THÂN. MỌI QUYỀN ĐƯỢC BẢO LƯU.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
