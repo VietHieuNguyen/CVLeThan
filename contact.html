@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Liên hệ với Lê Tiến Thân - Sinh viên Thương mại điện tử tại HCMUTE">
+  <meta property="og:title" content="Lê Tiến Thân | Liên Hệ">
+  <meta property="og:description" content="Liên hệ hợp tác, trao đổi về Digital Marketing và cơ hội thực tập">
+  <meta property="og:type" content="website">
   <title>Lê Tiến Thân | Liên Hệ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
@@ -29,7 +33,7 @@
   </header>
 
   <!-- HERO CONTACT -->
-  <section class="hero-contact">
+  <section class="hero-contact reveal">
     <div class="container">
       <h1>Hãy bắt đầu cuộc<br><em class="serif-italic">trò chuyện.</em></h1>
       <p>Dù là một dự án mới hay đơn giản chỉ là lời chào, tôi luôn sẵn sàng trao đổi về trải nghiệm số, thương mại điện tử và cơ hội thực tập phù hợp.</p>
@@ -37,7 +41,7 @@
   </section>
 
   <!-- CONTACT INFO -->
-  <section class="contact-section">
+  <section class="contact-section reveal">
     <div class="container">
       <div class="contact-info">
         <div class="contact-block">
@@ -56,13 +60,13 @@
           <span class="label-text">Kết Nối</span>
           <div class="social-icons">
             <a href="https://www.facebook.com/than.than.136521/about" target="_blank" rel="noreferrer" class="social-icon" title="Facebook">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              <i class="fa-brands fa-facebook-f"></i>
             </a>
             <a href="https://www.linkedin.com/in/thantienle/" target="_blank" rel="noreferrer" class="social-icon" title="LinkedIn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <i class="fa-brands fa-linkedin-in"></i>
             </a>
             <a href="mailto:lethan0811@gmail.com" class="social-icon" title="Gmail">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <i class="fa-solid fa-envelope"></i>
             </a>
           </div>
         </div>
@@ -74,6 +78,13 @@
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_url" value="contact.html">
+          <input type="hidden" name="_next" value="">
+
+          <!-- Loading overlay -->
+          <div class="form-overlay" id="form-overlay">
+            <div class="form-spinner"></div>
+            <p>Đang gửi tin nhắn...</p>
+          </div>
 
           <div class="contact-form-intro">
             <span class="label-text">Biểu Mẫu</span>
@@ -114,7 +125,10 @@
           </label>
 
           <div class="form-actions">
-            <button type="submit" class="btn-primary">Gửi Tin Nhắn</button>
+            <button type="submit" class="btn-primary" id="submit-btn">
+              <span class="btn-text">Gửi Tin Nhắn</span>
+              <span class="btn-loading" style="display:none;"><i class="fa-solid fa-spinner fa-spin"></i> Đang gửi...</span>
+            </button>
             <p class="form-note">Tin nhắn sẽ được gửi tới <a href="mailto:lethan0811@gmail.com">lethan0811@gmail.com</a>.</p>
           </div>
 
@@ -124,7 +138,7 @@
         <div class="contact-cards">
           <a href="#contact-form" class="contact-action-card">
             <div class="contact-card-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <i class="fa-solid fa-comment-dots"></i>
             </div>
             <h3>Biểu mẫu</h3>
             <p>Điền thông tin và gửi trực tiếp từ website</p>
@@ -133,7 +147,7 @@
 
           <a href="https://www.facebook.com/than.than.136521/about" target="_blank" rel="noreferrer" class="contact-action-card">
             <div class="contact-card-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              <i class="fa-brands fa-facebook-f"></i>
             </div>
             <h3>Facebook</h3>
             <p>Nhắn tin nhanh qua Messenger</p>
@@ -142,7 +156,7 @@
 
           <a href="https://www.linkedin.com/in/thantienle/" target="_blank" rel="noreferrer" class="contact-action-card">
             <div class="contact-card-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <i class="fa-brands fa-linkedin-in"></i>
             </div>
             <h3>LinkedIn</h3>
             <p>Kết nối chuyên nghiệp</p>
@@ -154,7 +168,7 @@
   </section>
 
   <!-- AVAILABILITY -->
-  <section class="availability-section">
+  <section class="availability-section reveal">
     <div class="container">
       <div class="availability-image">
         <img src="images/workspace.png" alt="Không gian làm việc" onerror="this.style.display='none'">
@@ -179,6 +193,21 @@
       <span class="footer-copyright">© 2026 LÊ TIẾN THÂN. MỌI QUYỀN ĐƯỢC BẢO LƯU.</span>
     </div>
   </footer>
+
+  <!-- SUCCESS TOAST -->
+  <div class="toast-notification" id="toast-notification">
+    <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+    <div class="toast-content">
+      <strong>Gửi thành công!</strong>
+      <p>Tin nhắn của bạn đã được gửi. Tôi sẽ phản hồi sớm nhất có thể.</p>
+    </div>
+    <button class="toast-close" id="toast-close" aria-label="Đóng"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="back-to-top" aria-label="Quay lại đầu trang">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
 
 </body>
 </html>
