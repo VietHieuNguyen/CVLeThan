@@ -1664,19 +1664,18 @@ a.project-card {
 
 .result-img-wrapper {
   width: 100%;
-  max-width: 600px;
+  max-width: 320px; /* Frame perfectly fits the image max size */
   margin: 0 auto;
   text-align: center;
-  padding: 16px 0;
+  padding: 0;
 }
 
 .email-mockup-img {
-  width: 80%;
-  max-width: 100%;
-  border-radius: 12px;
+  width: 100%; /* Fill the frame exactly */
+  height: auto;
   margin: 0 auto;
   display: block;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  filter: drop-shadow(0 10px 25px rgba(0,0,0,0.12));
   transition: transform 0.3s ease;
 }
 
@@ -1685,10 +1684,11 @@ a.project-card {
 }
 
 @media (max-width: 768px) {
+  .result-img-wrapper {
+     max-width: 280px; /* Slightly smaller frame on phones */
+  }
   .email-mockup-img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    filter: drop-shadow(0 6px 15px rgba(0,0,0,0.08));
   }
 }
 
