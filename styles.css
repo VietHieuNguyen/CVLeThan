@@ -1650,6 +1650,7 @@ a.project-card {
   margin-top: 24px;
 }
 
+/* STANDARD SHOWCASE ITEM CLASSES */
 .figma-item-header {
   font-size: 1.25rem;
   font-weight: 600;
@@ -1663,6 +1664,28 @@ a.project-card {
 }
 
 .result-img-wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+
+.result-img-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.result-img-wrapper img:hover {
+  transform: translateY(-4px);
+}
+
+.email-mockup-wrapper {
   width: 100%;
   max-width: 320px; /* Frame perfectly fits the image max size */
   margin: 0 auto;
@@ -1684,13 +1707,14 @@ a.project-card {
 }
 
 @media (max-width: 768px) {
-  .result-img-wrapper {
+  .email-mockup-wrapper {
      max-width: 280px; /* Slightly smaller frame on phones */
   }
   .email-mockup-img {
     filter: drop-shadow(0 6px 15px rgba(0,0,0,0.08));
   }
 }
+
 
 @media (max-width: 992px) {
   .project-meta {
